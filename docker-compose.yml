@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  core:
+    build: .
+    container_name: gitfetcher
+    ports:
+      - "3000:3000"
+    links:
+      - db
+    depends_on:
+      - db
+    volumes:
+      - ".:/gitFetcher"
+    
+  db:
+    image: postgres:9.4
+    container_name: gitfetcher-db
+    environment:
+      POSTGRES_DB: gitfetcher-dev
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: r00t
+    ports: ["5432:5432"]
+    expose: ["5432"]
