@@ -63,8 +63,9 @@ Sample:
 $ psql -d gitfetcher-db
 ```
 Now, you can execute your own T-commands. 
-> ps: for execute the command, you need to put ; in the end of line;
-> ps2: to exit the db container, you have to execute the command "\q"
+> ps: for execute the command, you need to put ; in the end of line.
+
+> ps2: to exit the db container, you have to execute the command "\q".
 
 
 # Can I see the online Demo?
