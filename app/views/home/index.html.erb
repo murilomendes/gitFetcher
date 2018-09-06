@@ -1,0 +1,17 @@
+
+<div class="container-fluid bg-2 text-center">
+    <h1> Welcome to Git Fetcher :)</h1>
+    <h3>What Am I?</h3>
+    <p>A web-app created to search good repositories on Github!</p>
+    <br/>
+    <div>
+        <p> Pick one: </p>
+        <div class="col">
+            <%= link_to "Ruby", repositories_path(:language => "Ruby"), method: :get, class: 'btn btn-language btn-danger btn-lg' %>
+            <%= link_to "Elixir", repositories_path(:language => "Elixir"), method: :get, class: 'btn btn-language btn-primary btn-lg' %>
+            <%= link_to "JavaScript", repositories_path(:language => "JavaScript"), method: :get, class: 'btn btn-language btn-info btn-lg' %>
+            <%= link_to "Swift", repositories_path(:language => "Swift"), method: :get, class: 'btn btn-language btn-warning btn-lg' %>
+            <%= link_to "GO", repositories_path(:language => "GO"), method: :get, class: 'btn btn-language btn-success btn-lg' %>
+        </div>
+    </div>
+</div>

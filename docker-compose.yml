@@ -17,7 +17,7 @@ services:
     image: postgres:9.4
     container_name: gitfetcher-db
     environment:
-      POSTGRES_DB: gitfetcher-dev
+      # POSTGRES_DB: gitfetcher-dev
       POSTGRES_USER: root
       POSTGRES_PASSWORD: r00t
     ports: ["5432:5432"]
