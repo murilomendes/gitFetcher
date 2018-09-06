@@ -63,14 +63,21 @@ Sample:
 $ psql -d gitfetcher-db
 ```
 Now, you can execute your own T-commands. 
-> ps: for execute the command, you need to put ; in the end of line.
+> ps: for execute the command, you need to put ; in the end of line;
+> ps2: to exit the db container, you have to execute the command "\q"
 
-> ps2: to exit the db container, you have to execute the command "\q".
-
+## Is an simple application, but it have tests?
+Yes. We have.
+For execute the tests you have to follow this steps:
+```sh
+$ docker exec -it gitfetcher bash
+$ rspec
+```
+And the tests will be executed :)
 
 # Can I see the online Demo?
 Sure.
-I already have publish this app into Heroku:
+I already have published this app into Heroku:
 https://gitfetcher-rails.herokuapp.com/
 
 
