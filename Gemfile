@@ -15,7 +15,7 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
-gem 'rspec', '~> 3.8.0'
+gem 'rspec-rails', '~> 3.8.0'
 gem 'git-trend'
 
 # Use CoffeeScript for .coffee assets and views
